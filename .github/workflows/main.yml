@@ -30,9 +30,8 @@ jobs:
     - name: Install Dependencies
       run: |
         # 安装所需依赖包 | Install required dependency packages
-        sudo dpkg --add-architecture i386
         sudo apt-get update -y
-        sudo apt install make python3 bc curl lib32ncurses5-dev:i386 libncurses6 libncurses5-dev:i386 -y
+        sudo apt install make python3 bc curl lib32ncurses6-dev libncurses6 libncurses6-dev -y
 
         # 克隆编译器仓库 | Clone the compiler repository
         # git clone https://github.com/ibnudz/aarch64-linux-android-4.9 $(pwd)/toolchain
