@@ -30,6 +30,7 @@ jobs:
     - name: Install Dependencies
       run: |
         # 安装所需依赖包 | Install required dependency packages
+        sudo dpkg --add-architecture i386
         sudo apt-get update -y
         sudo apt install make python3 bc curl lib32ncurses5-dev libncurses5 libncurses5-dev -y
 
