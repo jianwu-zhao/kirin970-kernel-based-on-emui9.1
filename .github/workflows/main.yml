@@ -31,7 +31,7 @@ jobs:
       run: |
         # 安装所需依赖包 | Install required dependency packages
         sudo apt-get update -y
-        sudo apt install make python3 bc curl lib32ncurses-dev libncurses libncurses-dev -y
+        sudo apt install make python3 bc curl lib32ncurses-dev libncurses6 libncurses-dev -y
 
         # 克隆编译器仓库 | Clone the compiler repository
         # git clone https://github.com/ibnudz/aarch64-linux-android-4.9 $(pwd)/toolchain
